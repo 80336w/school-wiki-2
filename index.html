@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>校园百科 | 学校资讯站</title>
-  <meta name="description" content="校园百科与学校资讯站，包含学校公告、课程、活动、资源导航等内容。" />
-  <link rel="stylesheet" href="style.css" />
+  <title>校园百科 | 学校官网</title>
+  <meta name="description" content="校园百科为学校官网与校园资讯平台，包含学校概况、新闻动态、课程设置、招生就业、师资团队与个人中心。" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <div class="topbar">
     <div class="wrap">
-      <span>欢迎访问校园资讯站</span>
+      <span>欢迎访问校园百科</span>
       <div class="top-links">
-        <a href="#news">新闻</a>
-        <a href="#events">活动</a>
-        <a href="#resources">资源</a>
+        <a href="#news">新闻动态</a>
+        <a href="#programs">教学科研</a>
+        <a href="#admissions">招生就业</a>
+        <a href="#about">学校概况</a>
       </div>
     </div>
   </div>
@@ -23,7 +24,7 @@
     <div class="wrap nav">
       <div class="brand">
         <div class="brand-mark">S</div>
-        <div>
+        <div class="brand-text">
           <strong>校园百科</strong>
           <small>School Wiki</small>
         </div>
@@ -32,18 +33,18 @@
       <button class="menu-btn" aria-label="打开菜单">☰</button>
 
       <nav class="main-nav">
-        <a href="#overview">概况</a>
-        <a href="#courses">课程</a>
-        <a href="#news">新闻</a>
-        <a href="#events">活动</a>
-        <a href="#resources">资源</a>
-        <a href="#contact">联系</a>
+        <a href="#about">学校概况</a>
+        <a href="#programs">教学科研</a>
+        <a href="#news">新闻中心</a>
+        <a href="#admissions">招生就业</a>
+        <a href="#teachers">师资队伍</a>
+        <a href="#contact">联系我们</a>
       </nav>
 
       <div class="user-area">
         <button id="authTrigger" class="user-trigger">注册 / 登录</button>
         <div id="userBadge" class="user-badge hidden">
-          <img id="miniAvatar" src="https://ui-avatars.com/api/?name=User&background=1d4ed8&color=fff" alt="用户头像">
+          <img id="miniAvatar" src="" alt="用户头像" />
           <span id="miniName">校园用户</span>
         </div>
       </div>
@@ -54,33 +55,33 @@
     <section class="hero">
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <span class="tag">校务公开 · 学习支持 · 生活服务</span>
-          <h1>让校园知识更清晰、更便捷、更温暖</h1>
+          <span class="tag">教育创新 · 校园服务 · 文化传承</span>
+          <h1>以教育推动成长，以创新助力未来</h1>
           <p>
-            汇聚学校动态、课程信息、校园活动、学习资源与服务入口，帮助师生更快找到所需信息。
+            我们致力于建设开放、包容、创新的校园生态，促进学生全面发展，推动教学改革与文化传承。
           </p>
 
           <div class="hero-actions">
-            <a class="primary-btn" href="#news">查看新闻</a>
-            <a class="ghost-btn" href="#overview">了解学校</a>
+            <a class="primary-btn" href="#news">了解动态</a>
+            <a class="ghost-btn" href="#about">走进校园</a>
           </div>
 
           <ul class="hero-meta">
             <li><strong>36</strong><span>教学班级</span></li>
             <li><strong>1200+</strong><span>在校师生</span></li>
-            <li><strong>28</strong><span>社团活动</span></li>
+            <li><strong>28</strong><span>学科社团</span></li>
           </ul>
         </div>
 
         <div class="hero-panel">
           <div class="panel-head">
             <span class="status-dot"></span>
-            <span>校园公告</span>
+            <span>通知公告</span>
           </div>
 
           <div class="announce">
             <h3>关于新学期教学安排的通知</h3>
-            <p>本学期将于 9 月 1 日起正式实施新课程安排及班级调整，请师生及时查看相关信息。</p>
+            <p>本学期教学工作安排已正式发布，相关时间表、班级调整及校历安排请以校务公告为准。</p>
             <a href="#news">查看详情</a>
           </div>
 
@@ -91,7 +92,7 @@
             </div>
             <div>
               <span class="mini-time">08-18</span>
-              <p>教师培训会议</p>
+              <p>教师培训会</p>
             </div>
             <div>
               <span class="mini-time">08-23</span>
@@ -102,15 +103,267 @@
       </div>
     </section>
 
+    <section class="notice-strip">
+      <div class="wrap notice-inner">
+        <span class="notice-label">最新通知</span>
+        <div class="notice-marquee">
+          <span>校园开放日即将启动，欢迎家长与学生提前报名</span>
+          <span>2026年度校园科技节启动申报，相关方案已发布</span>
+          <span>秋季新学期课程安排已更新，教务信息请及时查看</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">学校概况</span>
+          <h2>学校介绍</h2>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="icon">🏫</span>
+          <h3>办学理念</h3>
+          <p>以德育为先、以创新为核，以责任为本，培养具有时代担当与社会责任感的人才。</p>
+        </article>
+
+        <article class="info-card">
+          <span class="icon">📚</span>
+          <h3>教学特色</h3>
+          <p>融合优质传统教育与项目式学习，推进课程改革与实践育人，提升学生创造力和实践能力。</p>
+        </article>
+
+        <article class="info-card">
+          <span class="icon">🌱</span>
+          <h3>校园文化</h3>
+          <p>构建和谐文明、开放包容、积极向上的校园文化，帮助学生全面成长、健康发展。</p>
+        </article>
+      </div>
+    </section>
+
     <section class="wrap">
       <div class="section-head">
         <div>
-          <span class="eyebrow">用户主页</span>
+          <span class="eyebrow">快捷入口</span>
+          <h2>校园导航</h2>
+        </div>
+      </div>
+
+      <div class="shortcut-grid">
+        <a class="shortcut" href="#">
+          <span>📖</span>
+          <strong>课程安排</strong>
+          <small>查看教学计划</small>
+        </a>
+        <a class="shortcut" href="#">
+          <span>🧭</span>
+          <strong>校园地图</strong>
+          <small>快速定位场所</small>
+        </a>
+        <a class="shortcut" href="#">
+          <span>🧑‍🏫</span>
+          <strong>师资团队</strong>
+          <small>了解老师风采</small>
+        </a>
+        <a class="shortcut" href="#">
+          <span>🧪</span>
+          <strong>实验资源</strong>
+          <small>开放与申请</small>
+        </a>
+        <a class="shortcut" href="#">
+          <span>📅</span>
+          <strong>校历安排</strong>
+          <small>年度活动与节假日</small>
+        </a>
+        <a class="shortcut" href="#">
+          <span>🛎️</span>
+          <strong>服务中心</strong>
+          <small>学生事务支持</small>
+        </a>
+      </div>
+    </section>
+
+    <section id="programs" class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">教育教学</span>
+          <h2>课程设置</h2>
+        </div>
+      </div>
+
+      <div class="filter-bar" aria-label="课程筛选">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="science">科学</button>
+        <button class="filter-btn" data-filter="arts">艺术</button>
+        <button class="filter-btn" data-filter="tech">科技</button>
+        <button class="filter-btn" data-filter="life">生活</button>
+      </div>
+
+      <div class="course-grid">
+        <article class="course-card" data-category="science">
+          <div class="course-tag">科学</div>
+          <h3>生命科学与实验</h3>
+          <p>结合观察、实验与探究，帮助学生建立科学认知并提升探究能力。</p>
+          <div class="meta"><span>教师：王老师</span><span>周三</span></div>
+        </article>
+
+        <article class="course-card" data-category="tech">
+          <div class="course-tag">科技</div>
+          <h3>人工智能与创新</h3>
+          <p>以项目化学习方式进行实践，引导学生理解 AI 技术与创新应用。</p>
+          <div class="meta"><span>教师：李老师</span><span>周二</span></div>
+        </article>
+
+        <article class="course-card" data-category="arts">
+          <div class="course-tag">艺术</div>
+          <h3>设计与表达</h3>
+          <p>通过美术与设计训练，提升学生审美能力与表达能力。</p>
+          <div class="meta"><span>教师：陈老师</span><span>周四</span></div>
+        </article>
+
+        <article class="course-card" data-category="life">
+          <div class="course-tag">生活</div>
+          <h3>心理成长与健康教育</h3>
+          <p>关注学生身心健康，提高沟通、自律和综合素养。</p>
+          <div class="meta"><span>教师：赵老师</span><span>周五</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">新闻中心</span>
+          <h2>校园动态</h2>
+        </div>
+      </div>
+
+      <div class="news-layout">
+        <div class="feature-news">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="校园活动" />
+          <div class="feature-content">
+            <span class="news-tag">校园要闻</span>
+            <h3>校园科技节成功举办，学生创新作品展示成果</h3>
+            <p>近百项作品在校园科技节中亮相，展现了学生在人工智能、机器人、创意设计等方向的成果。</p>
+            <small>2026-11-01</small>
+          </div>
+        </div>
+
+        <div class="news-list">
+          <article class="news-item">
+            <div class="news-date">
+              <strong>03</strong>
+              <span>十一月</span>
+            </div>
+            <div class="news-body">
+              <span class="news-tag yellow">公告</span>
+              <h4>关于校园图书馆开放时间调整的通知</h4>
+              <p>自本月起图书馆周末开放时间将延长，欢迎师生提前预约使用。</p>
+            </div>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">
+              <strong>01</strong>
+              <span>十一月</span>
+            </div>
+            <div class="news-body">
+              <span class="news-tag green">活动</span>
+              <h4>“青春同行”校际联谊活动圆满举行</h4>
+              <p>来自多所学校的学生在校园中交流经验，增进友谊和合作意识。</p>
+            </div>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">
+              <strong>28</strong>
+              <span>十月</span>
+            </div>
+            <div class="news-body">
+              <span class="news-tag blue">教学</span>
+              <h4>新课程开发工作会议顺利召开</h4>
+              <p>教务处与各学科教师围绕课程优化与教学目标展开深入研讨。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="admissions" class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">招生就业</span>
+          <h2>招生与服务</h2>
+        </div>
+      </div>
+
+      <div class="admission-grid">
+        <article class="panel-box">
+          <span class="mini-badge">招生信息</span>
+          <h3>2026年招生简章</h3>
+          <p>学校将持续推进育人体系建设，完善招生信息公开与服务保障。</p>
+        </article>
+
+        <article class="panel-box">
+          <span class="mini-badge alt">就业服务</span>
+          <h3>就业与实习指导</h3>
+          <p>帮助学生获取职业发展指导、实习资源及校友支持。</p>
+        </article>
+
+        <article class="panel-box">
+          <span class="mini-badge">校友联系</span>
+          <h3>校友资源共享</h3>
+          <p>建立校友网络与实践平台，促进经验交流和社会连接。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="teachers" class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">师资队伍</span>
+          <h2>教师风采</h2>
+        </div>
+      </div>
+
+      <div class="teacher-grid">
+        <article class="teacher-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="教师照片" />
+          <div>
+            <h3>王晓燕</h3>
+            <p>语文教师</p>
+          </div>
+        </article>
+
+        <article class="teacher-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="教师照片" />
+          <div>
+            <h3>赵建国</h3>
+            <p>数学教师</p>
+          </div>
+        </article>
+
+        <article class="teacher-card">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="教师照片" />
+          <div>
+            <h3>李娜</h3>
+            <p>科学教师</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">个人主页</span>
           <h2>校园个人主页</h2>
         </div>
       </div>
 
-      <div id="publicProfileCard" class="profile-card">
+      <div class="profile-card">
         <div class="profile-cover"></div>
         <div class="profile-body">
           <img id="profileAvatarLarge" class="profile-avatar" src="https://ui-avatars.com/api/?name=User&background=1d4ed8&color=fff" alt="用户头像" />
@@ -146,268 +399,13 @@
         </div>
       </div>
     </section>
-
-    <section id="overview" class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">学校概况</span>
-          <h2>校园介绍</h2>
-        </div>
-      </div>
-
-      <div class="info-grid">
-        <article class="info-card">
-          <span class="icon">🏫</span>
-          <h3>办学理念</h3>
-          <p>以创新教育、文明礼仪、责任担当为核心，培养具有全球视野与社会责任感的人才。</p>
-        </article>
-
-        <article class="info-card">
-          <span class="icon">📚</span>
-          <h3>教学特色</h3>
-          <p>融合传统教育与项目制学习，鼓励学生在实践中发现问题、探索知识与协作创新。</p>
-        </article>
-
-        <article class="info-card">
-          <span class="icon">🌱</span>
-          <h3>校园文化</h3>
-          <p>倡导多元文化、开放交流与团队协作，营造安全、活力、积极向上的学习环境。</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">学校导航</span>
-          <h2>快速入口</h2>
-        </div>
-      </div>
-
-      <div class="shortcut-grid">
-        <a class="shortcut" href="#">
-          <span>📖</span>
-          <strong>课程表</strong>
-          <small>查看学习安排</small>
-        </a>
-        <a class="shortcut" href="#">
-          <span>🧭</span>
-          <strong>校园地图</strong>
-          <small>快速定位位置</small>
-        </a>
-        <a class="shortcut" href="#">
-          <span>🧑‍🏫</span>
-          <strong>教师风采</strong>
-          <small>了解教学团队</small>
-        </a>
-        <a class="shortcut" href="#">
-          <span>🧪</span>
-          <strong>实验室</strong>
-          <small>资源与开放时间</small>
-        </a>
-        <a class="shortcut" href="#">
-          <span>📅</span>
-          <strong>校历</strong>
-          <small>查看年度安排</small>
-        </a>
-        <a class="shortcut" href="#">
-          <span>🛎️</span>
-          <strong>服务中心</strong>
-          <small>学生事务支持</small>
-        </a>
-      </div>
-    </section>
-
-    <section id="courses" class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">课程与教学</span>
-          <h2>课程专区</h2>
-        </div>
-      </div>
-
-      <div class="filter-bar" aria-label="课程筛选">
-        <button class="filter-btn active" data-filter="all">全部</button>
-        <button class="filter-btn" data-filter="science">科学</button>
-        <button class="filter-btn" data-filter="arts">艺术</button>
-        <button class="filter-btn" data-filter="tech">科技</button>
-        <button class="filter-btn" data-filter="life">生活</button>
-      </div>
-
-      <div class="course-grid">
-        <article class="course-card" data-category="science">
-          <div class="course-tag">科学</div>
-          <h3>基础生物实验</h3>
-          <p>通过观察与实验，帮助学生建立生命科学的基础认知和科学探究能力。</p>
-          <div class="meta"><span>教师：王老师</span><span>周三</span></div>
-        </article>
-
-        <article class="course-card" data-category="tech">
-          <div class="course-tag">科技</div>
-          <h3>人工智能与创新</h3>
-          <p>学习AI基础概念和智能应用案例，提升数字素养与创造性思维。</p>
-          <div class="meta"><span>教师：李老师</span><span>周二</span></div>
-        </article>
-
-        <article class="course-card" data-category="arts">
-          <div class="course-tag">艺术</div>
-          <h3>设计与表达</h3>
-          <p>从视觉设计基础到表现方式训练，促进学生形成独特审美与表达能力。</p>
-          <div class="meta"><span>教师：陈老师</span><span>周四</span></div>
-        </article>
-
-        <article class="course-card" data-category="life">
-          <div class="course-tag">生活</div>
-          <h3>健康与心理成长</h3>
-          <p>关注学生身心成长，强化健康知识、沟通能力和自我管理能力。</p>
-          <div class="meta"><span>教师：赵老师</span><span>周五</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="news" class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">学校新闻</span>
-          <h2>最新动态</h2>
-        </div>
-      </div>
-
-      <div class="news-layout">
-        <div class="feature-news">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="学生在校园活动中交流" />
-          <div class="feature-content">
-            <span class="news-tag">校园要闻</span>
-            <h3>校园科技节成功举办，师生展示创新成果与项目实践</h3>
-            <p>近百项作品在校园科技节中亮相，展示了学生在人工智能、机器人、创意设计等方向的探索成果。</p>
-            <small>2026-11-01</small>
-          </div>
-        </div>
-
-        <div class="news-list">
-          <article class="news-item">
-            <div class="news-date">
-              <strong>03</strong>
-              <span>十一月</span>
-            </div>
-            <div class="news-body">
-              <span class="news-tag yellow">公告</span>
-              <h4>关于校园图书馆开放时间调整的通知</h4>
-              <p>自本月起，图书馆周末开放时间将延长，欢迎师生提前预约使用。</p>
-            </div>
-          </article>
-
-          <article class="news-item">
-            <div class="news-date">
-              <strong>01</strong>
-              <span>十一月</span>
-            </div>
-            <div class="news-body">
-              <span class="news-tag green">活动</span>
-              <h4>“青春同行”校际联谊活动圆满举行</h4>
-              <p>来自多所学校的学生在校园中交流经验，增进彼此理解与合作。</p>
-            </div>
-          </article>
-
-          <article class="news-item">
-            <div class="news-date">
-              <strong>28</strong>
-              <span>十月</span>
-            </div>
-            <div class="news-body">
-              <span class="news-tag blue">教学</span>
-              <h4>新课程开发工作会议顺利召开</h4>
-              <p>教务处与各学科教师围绕课程优化与教学目标梳理展开深入研讨。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="events" class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">活动日历</span>
-          <h2>近期活动</h2>
-        </div>
-      </div>
-
-      <div class="calendar">
-        <div class="calendar-item">
-          <div class="day">06</div>
-          <div class="event-info">
-            <h4>校园开放日</h4>
-            <p>面向家长和学生开放参观与讲座活动</p>
-          </div>
-        </div>
-
-        <div class="calendar-item">
-          <div class="day">12</div>
-          <div class="event-info">
-            <h4>志愿服务周</h4>
-            <p>组织学生参与社区服务与公益实践</p>
-          </div>
-        </div>
-
-        <div class="calendar-item">
-          <div class="day">17</div>
-          <div class="event-info">
-            <h4>科技创新展示</h4>
-            <p>项目作品、编程竞赛与实验展示活动</p>
-          </div>
-        </div>
-
-        <div class="calendar-item">
-          <div class="day">24</div>
-          <div class="event-info">
-            <h4>文艺汇演</h4>
-            <p>校园舞台节目、音乐和戏剧表演</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resources" class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">资源中心</span>
-          <h2>学习与服务资源</h2>
-        </div>
-      </div>
-
-      <div class="resource-grid">
-        <article class="resource-card">
-          <div class="resource-icon">📘</div>
-          <h3>学习资料</h3>
-          <p>课程资料、讲义、参考资料与优秀作业展示。</p>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon">🎧</div>
-          <h3>线上平台</h3>
-          <p>智慧平台、在线教学、会议工具与办公入口。</p>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon">🧠</div>
-          <h3>研究支持</h3>
-          <p>科研项目、教师指导、实验资源与申报支持。</p>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-icon">🤝</div>
-          <h3>心理与咨询</h3>
-          <p>学生支持与咨询服务，帮助提升学习与生活质量。</p>
-        </article>
-      </div>
-    </section>
   </main>
 
   <footer id="contact" class="footer">
     <div class="wrap footer-inner">
       <div>
         <h3>校园百科</h3>
-        <p>学校资讯、课程资源、活动信息与生活服务平台</p>
+        <p>汇聚学校资讯、教学信息、校园活动与教育服务平台。</p>
       </div>
 
       <div>
@@ -420,10 +418,10 @@
       </div>
 
       <div>
-        <h4>快速链接</h4>
+        <h4>快速入口</h4>
         <ul>
-          <li><a href="#overview">学校概况</a></li>
-          <li><a href="#courses">课程专区</a></li>
+          <li><a href="#about">学校概况</a></li>
+          <li><a href="#programs">课程设置</a></li>
           <li><a href="#news">校园新闻</a></li>
         </ul>
       </div>
@@ -444,7 +442,7 @@
       </div>
 
       <div class="social-auth">
-        <button type="button" id="githubLoginBtn" class="social-btn github-btn">
+        <button type="button" id="githubLoginBtn" class="social-btn">
           <span>🐙</span> GitHub 登录
         </button>
       </div>
@@ -481,6 +479,6 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>
