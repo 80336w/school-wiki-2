@@ -40,7 +40,13 @@
         <a href="#contact">联系</a>
       </nav>
 
-      <button class="primary-btn">加入我们</button>
+      <div class="user-area">
+        <button id="authTrigger" class="user-trigger">注册 / 登录</button>
+        <div id="userBadge" class="user-badge hidden">
+          <img id="miniAvatar" src="https://ui-avatars.com/api/?name=User&background=1d4ed8&color=fff" alt="用户头像">
+          <span id="miniName">校园用户</span>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -92,6 +98,51 @@
               <p>校园开放日</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">用户主页</span>
+          <h2>校园个人主页</h2>
+        </div>
+      </div>
+
+      <div id="publicProfileCard" class="profile-card">
+        <div class="profile-cover"></div>
+        <div class="profile-body">
+          <img id="profileAvatarLarge" class="profile-avatar" src="https://ui-avatars.com/api/?name=User&background=1d4ed8&color=fff" alt="用户头像" />
+          <div class="profile-info">
+            <h3 id="profileNameLarge">校园用户</h3>
+            <p id="profileIntroLarge">这个人还没有写介绍。</p>
+          </div>
+          <button id="editProfileBtn" class="primary-btn small-btn">编辑资料</button>
+        </div>
+      </div>
+
+      <div id="profileEditor" class="editor hidden">
+        <div class="form-grid">
+          <label class="field">
+            <span>头像</span>
+            <input id="avatarInput" type="file" accept="image/*" />
+          </label>
+
+          <label class="field">
+            <span>名称</span>
+            <input id="nameInput" type="text" maxlength="20" placeholder="请输入名称" />
+          </label>
+
+          <label class="field long">
+            <span>个人介绍</span>
+            <textarea id="introInput" rows="4" maxlength="120" placeholder="写一段个性介绍"></textarea>
+          </label>
+        </div>
+
+        <div class="editor-actions">
+          <button id="saveProfileBtn" class="primary-btn">保存资料</button>
+          <button id="cancelProfileBtn" class="ghost-btn">取消</button>
         </div>
       </div>
     </section>
@@ -382,6 +433,53 @@
       © 2026 校园百科 · All Rights Reserved
     </div>
   </footer>
+
+  <div id="authModal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close-btn" aria-label="关闭">×</button>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth="login">登录</button>
+        <button class="auth-tab" data-auth="register">注册</button>
+      </div>
+
+      <div class="social-auth">
+        <button type="button" id="githubLoginBtn" class="social-btn github-btn">
+          <span>🐙</span> GitHub 登录
+        </button>
+      </div>
+
+      <div class="divider"><span>或使用邮箱</span></div>
+
+      <form id="loginForm" class="auth-form">
+        <label>
+          <span>邮箱</span>
+          <input type="email" id="loginEmail" required />
+        </label>
+        <label>
+          <span>密码</span>
+          <input type="password" id="loginPassword" required />
+        </label>
+        <button type="submit" class="primary-btn full">邮箱登录</button>
+      </form>
+
+      <form id="registerForm" class="auth-form hidden">
+        <label>
+          <span>用户名</span>
+          <input type="text" id="registerName" maxlength="20" required />
+        </label>
+        <label>
+          <span>邮箱</span>
+          <input type="email" id="registerEmail" required />
+        </label>
+        <label>
+          <span>密码</span>
+          <input type="password" id="registerPassword" minlength="6" required />
+        </label>
+        <button type="submit" class="primary-btn full">邮箱注册</button>
+      </form>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
