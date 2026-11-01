@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-11-01T02:10:00.000Z",
+  "items": [
+    {
+      "id": "https://example.com/a",
+      "title": "标题",
+      "link": "https://example.com/a",
+      "summary": "摘要……",
+      "publishedAt": "2026-11-01T01:40:00.000Z",
+      "source": "36氪",
+      "cat": "科技"
+    }
+  ]
+}
