@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今日新闻</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#list">跳到正文</a>
+
+  <div class="newbar" id="newbar" role="status" aria-live="polite" hidden>
+    <span class="dot" aria-hidden="true"></span>
+    <span id="newbar-text">有新消息</span>
+    <button type="button" class="primary" id="newbar-reload">刷新查看</button>
+    <button type="button" class="ghost" id="newbar-later">稍后</button>
+  </div>
+
+  <header class="head">
+    <h1>今日新闻</h1>
+    <p class="sub" id="stamp">正在加载…</p>
+    <button type="button" id="reload">重新加载</button>
+  </header>
+
+  <nav class="chips" id="chips" aria-label="分类"></nav>
+
+  <main class="grid" id="list"></main>
+
+  <p class="foot" id="foot"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
